@@ -1,0 +1,14 @@
+.btn {
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    max-width: fit-content;
+
+    &--yellow {
+        background-color: #f8ca11;
+        color: white;
+    }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+.typebook {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    margin: 0.5rem 0;
+
+    &__signature {
+        flex: 80%;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.8rem 0 1.8rem 5%;
+    }
+
+    &__title a {
+        line-height: 14px;
+        font-size: 22px;
+        color: #1b2527;
+        text-decoration: none;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.2rem;
+    }
+
+    // &--reverse {
+    //     flex-direction: row-reverse;
+
+    //     .typebook__main {
+    //         align-items: flex-end;
+    //     }
+
+    //     .typebook__description {
+    //         text-align: right;
+    //     }
+
+    //     .typebook__signature {
+    //         justify-content: flex-start;
+    //     }
+    // }
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        .typebook__main {
+            align-items: flex-end;
+            padding: 1.8rem 5% 1.8rem 0;
+        }
+
+        .typebook__description {
+            text-align: right;
+        }
+
+        .typebook__signature {
+            justify-content: flex-start;
+        }
+    }
+}
